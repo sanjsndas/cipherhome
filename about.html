@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About — Home Geometry · Interior Design & Architecture Journal</title>
+  <meta name="description" content="About Home Geometry: independent editorial on interior design, architecture, materials, and spatial thinking. Our story, contributors, and editorial principles.">
+  <link rel="canonical" href="https://www.homegeometry.com/about.html">
+  <meta property="og:title" content="About — Home Geometry · Interior Design & Architecture Journal">
+  <meta property="og:description" content="Independent editorial on interior design, architecture, materials, and spatial thinking.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&h=630&fit=crop">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.homegeometry.com/about">
+  <meta name="twitter:card" content="summary_large_image">
+  <style>
+    /* ---------- RESET & BASE (same as homepage) ---------- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #fbf9f6;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      color: #2c2c2c;
+      line-height: 1.6;
+      font-size: 17px;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    h1, h2, h3, h4 {
+      font-family: 'Georgia', 'Times New Roman', serif;
+      font-weight: 500;
+      letter-spacing: -0.02em;
+      line-height: 1.25;
+      color: #1e1e1e;
+    }
+
+    h1 { font-size: 2.8rem; }
+    h2 { font-size: 2rem; margin-bottom: 1rem; }
+    h3 { font-size: 1.4rem; margin-bottom: 0.75rem; }
+
+    a {
+      text-decoration: none;
+      color: #2c2c2c;
+      transition: color 0.15s;
+    }
+
+    a:hover {
+      color: #8b6b4d;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+      height: auto;
+    }
+
+    /* ---------- TYPOGRAPHY & UTILITIES ---------- */
+    .container {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    .container-narrow {
+      max-width: 880px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    .meta {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: #7a7a7a;
+      font-weight: 500;
+    }
+
+    .category-tag {
+      display: inline-block;
+      background: #eae5df;
+      color: #4f4a44;
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 4px 10px;
+      border-radius: 20px;
+      margin-bottom: 12px;
+    }
+
+    .reading-time {
+      font-size: 0.78rem;
+      color: #888;
+      letter-spacing: 0.02em;
+    }
+
+    /* ---------- HEADER (same as homepage) ---------- */
+    .site-header {
+      border-bottom: 1px solid #e6e0d9;
+      background: #fbf9f6;
+      padding: 18px 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .header-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    .logo {
+      font-family: 'Georgia', serif;
+      font-size: 1.9rem;
+      font-weight: 600;
+      letter-spacing: -0.03em;
+      color: #1e1e1e;
+      line-height: 1;
+    }
+
+    .logo span {
+      color: #9c7b5c;
+      font-style: italic;
+      font-weight: 400;
+    }
+
+    .main-nav ul {
+      display: flex;
+      gap: 28px;
+      list-style: none;
+      font-size: 0.9rem;
+      font-weight: 500;
+      letter-spacing: 0.02em;
+      color: #444;
+    }
+
+    .main-nav a {
+      color: #3f3a35;
+      padding-bottom: 4px;
+      border-bottom: 2px solid transparent;
+    }
+
+    .main-nav a:hover {
+      border-bottom-color: #c4b5a5;
+      color: #1e1e1e;
+    }
+
+    .search-toggle {
+      background: none;
+      border: 1px solid #d6cec4;
+      border-radius: 30px;
+      padding: 6px 16px;
+      font-size: 0.85rem;
+      color: #555;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      transition: background 0.2s;
+    }
+
+    .search-toggle:hover {
+      background: #f0ebe5;
+    }
+
+    .search-bar {
+      display: none;
+      padding: 14px 24px;
+      background: #f3efe9;
+      border-bottom: 1px solid #e0d8cf;
+    }
+
+    .search-bar.active {
+      display: block;
+    }
+
+    .search-bar input {
+      width: 100%;
+      max-width: 600px;
+      padding: 12px 18px;
+      border: 1px solid #cdc4b8;
+      border-radius: 40px;
+      font-size: 1rem;
+      background: #fff;
+      outline: none;
+      font-family: inherit;
+    }
+
+    .search-bar input:focus {
+      border-color: #9c7b5c;
+      box-shadow: 0 0 0 3px rgba(156,123,92,0.1);
+    }
+
+    /* ---------- ABOUT PAGE SPECIFIC ---------- */
+    .about-hero {
+      padding: 56px 0 32px;
+      border-bottom: 1px solid #e6e0d9;
+    }
+
+    .about-hero h1 {
+      font-size: 3rem;
+      margin-bottom: 18px;
+    }
+
+    .about-hero .lead {
+      font-size: 1.3rem;
+      color: #4a4540;
+      line-height: 1.6;
+      max-width: 780px;
+      font-family: 'Georgia', serif;
+      font-style: italic;
+      color: #6b5f54;
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 56px;
+      padding: 56px 0;
+      border-bottom: 1px solid #e6e0d9;
+    }
+
+    .about-text p {
+      margin-bottom: 1.4rem;
+      font-size: 1.05rem;
+      color: #3b3631;
+      line-height: 1.8;
+    }
+
+    .about-text blockquote {
+      border-left: 4px solid #c4b5a5;
+      padding-left: 24px;
+      margin: 32px 0;
+      font-style: italic;
+      color: #5f5851;
+      font-size: 1.15rem;
+    }
+
+    .about-image {
+      border-radius: 4px;
+      overflow: hidden;
+      background: #e0d8cf;
+    }
+
+    .about-image img {
+      width: 100%;
+      height: 100%;
+      min-height: 400px;
+      object-fit: cover;
+    }
+
+    .values-section {
+      padding: 56px 0;
+      border-bottom: 1px solid #e6e0d9;
+    }
+
+    .values-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 36px;
+      margin-top: 36px;
+    }
+
+    .value-item h3 {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+    }
+
+    .value-item p {
+      font-size: 0.95rem;
+      color: #5f5851;
+      line-height: 1.7;
+    }
+
+    .team-section {
+      padding: 56px 0;
+      border-bottom: 1px solid #e6e0d9;
+    }
+
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 32px;
+      margin-top: 36px;
+    }
+
+    .team-member {
+      text-align: left;
+    }
+
+    .team-member .avatar {
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      border-radius: 50%;
+      background: #d9d0c5;
+      margin-bottom: 16px;
+      overflow: hidden;
+    }
+
+    .team-member .avatar img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .team-member h4 {
+      font-family: 'Inter', sans-serif;
+      font-size: 1rem;
+      font-weight: 600;
+      color: #1e1e1e;
+      margin-bottom: 4px;
+    }
+
+    .team-member .role {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: #9c7b5c;
+      font-weight: 500;
+      margin-bottom: 8px;
+    }
+
+    .team-member p {
+      font-size: 0.88rem;
+      color: #5f5851;
+      line-height: 1.6;
+    }
+
+    .editorial-policy {
+      padding: 56px 0;
+      background: #f5f1ec;
+      border-radius: 4px;
+      margin: 32px 0 64px;
+    }
+
+    .editorial-policy h2 {
+      margin-bottom: 24px;
+    }
+
+    .editorial-policy p {
+      font-size: 1.05rem;
+      color: #3b3631;
+      line-height: 1.8;
+      margin-bottom: 1.4rem;
+    }
+
+    .editorial-policy ul {
+      list-style: none;
+      margin: 24px 0;
+    }
+
+    .editorial-policy ul li {
+      padding: 12px 0 12px 28px;
+      position: relative;
+      font-size: 1rem;
+      color: #3b3631;
+      border-bottom: 1px solid #e0d8cf;
+    }
+
+    .editorial-policy ul li::before {
+      content: "—";
+      position: absolute;
+      left: 0;
+      color: #9c7b5c;
+      font-weight: 600;
+    }
+
+    /* ---------- FOOTER (same as homepage) ---------- */
+    .site-footer {
+      background: #1e1c1a;
+      color: #b8b0a8;
+      padding: 56px 0 28px;
+      font-size: 0.9rem;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 40px;
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    .footer-brand .logo {
+      color: #f0ece7;
+      font-size: 1.7rem;
+      margin-bottom: 12px;
+    }
+
+    .footer-brand p {
+      font-size: 0.9rem;
+      line-height: 1.6;
+      color: #948c84;
+      max-width: 300px;
+    }
+
+    .footer-col h5 {
+      color: #e0d8cf;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 16px;
+      font-weight: 600;
+    }
+
+    .footer-col ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .footer-col a {
+      color: #b8b0a8;
+      font-size: 0.88rem;
+    }
+
+    .footer-col a:hover {
+      color: #fff;
+    }
+
+    .footer-bottom {
+      max-width: 1280px;
+      margin: 40px auto 0;
+      padding: 24px 24px 0;
+      border-top: 1px solid #2f2c28;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 16px;
+      font-size: 0.8rem;
+      color: #7a736c;
+    }
+
+    /* ---------- RESPONSIVE ---------- */
+    @media (max-width: 1024px) {
+      .about-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+
+      .about-image img {
+        min-height: 300px;
+      }
+
+      .values-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .team-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 720px) {
+      body { font-size: 16px; }
+      h1 { font-size: 2rem; }
+      h2 { font-size: 1.6rem; }
+
+      .header-inner {
+        flex-wrap: wrap;
+        gap: 12px;
+      }
+
+      .main-nav ul {
+        gap: 16px;
+        font-size: 0.8rem;
+        flex-wrap: wrap;
+      }
+
+      .about-hero h1 {
+        font-size: 2.2rem;
+      }
+
+      .about-hero .lead {
+        font-size: 1.1rem;
+      }
+
+      .values-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .team-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 24px;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .container, .container-narrow, .header-inner, .footer-grid {
+        padding: 0 16px;
+      }
+
+      .search-toggle span {
+        display: none;
+      }
+
+      .team-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="/" class="logo">Cipher Home <span>Geometry</span></a>
+      <nav class="main-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="terms.html">Terms Of Privacy</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="cookies.html">Cookies Policy</a></li>
+          <li><a href="disclaimer.html">Disclaimer</a></li>
+          <li><a href="categories.html">Categories</a></li>
+        </ul>
+      </nav>
+      <button class="search-toggle" id="searchToggle" aria-label="Search articles">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+        <span>Search</span>
+      </button>
+    </div>
+    <div class="search-bar" id="searchBar">
+      <input type="search" id="searchInput" placeholder="Search articles, topics, materials…" aria-label="Search articles">
+    </div>
+  </header>
+
+  <!-- ABOUT HERO -->
+  <section class="about-hero">
+    <div class="container">
+      <span class="category-tag">About Us</span>
+      <h1>We write about the spaces<br>that shape how we live.</h1>
+      <p class="lead">Home Geometry is an independent journal exploring interior design, architecture, materials, and the quiet intelligence of well-considered space.</p>
+    </div>
+  </section>
+
+  <!-- ABOUT GRID -->
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-text">
+        <h2>Our Story</h2>
+        <p>Home Geometry began in 2019 as a personal notebook — a place to collect observations about why some rooms feel right and others don't. That curiosity grew into a publication read by design professionals, homeowners, and anyone who cares about the built environment.</p>
+        <p>We are not a trend site. We don't chase viral kitchens or predict color of the year. Instead, we focus on the enduring principles that make spaces work: proportion, light, material honesty, and the relationship between a building and its context. Our articles are researched, reported, and written with care.</p>
+        <blockquote>“Design is not decoration. It is the thoughtful arrangement of space, light, and material to support human life.”</blockquote>
+        <p>Every week, we publish in-depth guides, case studies, and practical knowledge for design-conscious readers. Whether you're renovating a small apartment or simply trying to make your living room feel more intentional, we aim to give you tools and ideas that last longer than a season.</p>
+        <p>Home Geometry is independently owned and editorially independent. We do not accept sponsored content disguised as editorial. When we recommend a product or material, it's because we believe it's worth your attention — not because someone paid us to say so.</p>
+      </div>
+      <div class="about-image">
+        <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=800&h=1000&fit=crop" alt="Sunlit living room with high ceilings, large windows, and carefully arranged furniture">
+      </div>
+    </div>
+  </div>
+
+  <!-- VALUES -->
+  <section class="values-section">
+    <div class="container">
+      <h2>What We Stand For</h2>
+      <div class="values-grid">
+        <div class="value-item">
+          <h3>Clarity over clutter</h3>
+          <p>We believe good design is legible. We write clearly, avoid jargon, and explain the “why” behind every idea so you can apply it in your own space.</p>
+        </div>
+        <div class="value-item">
+          <h3>Depth over trends</h3>
+          <p>We're more interested in principles that endure than in what's trending on social media. Our archive is built to be useful years from now.</p>
+        </div>
+        <div class="value-item">
+          <h3>Honesty in materials</h3>
+          <p>We champion materials that age gracefully and express their true nature — stone that looks like stone, wood that feels like wood.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TEAM -->
+  <section class="team-section">
+    <div class="container">
+      <h2>Contributors</h2>
+      <div class="team-grid">
+        <div class="team-member">
+          <div class="avatar">
+            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=300&h=300&fit=crop&crop=face" alt="Portrait of Elena Marchetti">
+          </div>
+          <h4>Elena Marchetti</h4>
+          <div class="role">Editor-in-Chief</div>
+          <p>Interior designer and writer. Elena founded Home Geometry to bridge the gap between professional design thinking and everyday living.</p>
+        </div>
+        <div class="team-member">
+          <div class="avatar">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop&crop=face" alt="Portrait of Marco Bellini">
+          </div>
+          <h4>Marco Bellini</h4>
+          <div class="role">Architecture Editor</div>
+          <p>Marco is a practicing architect with a focus on residential work. He writes about structure, materiality, and the poetics of construction.</p>
+        </div>
+        <div class="team-member">
+          <div class="avatar">
+            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=300&h=300&fit=crop&crop=face" alt="Portrait of Sarah Lin">
+          </div>
+          <h4>Sarah Lin</h4>
+          <div class="role">Senior Writer</div>
+          <p>Sarah covers small-space living, urban housing, and the intersection of design and well-being. She believes good design should be accessible to everyone.</p>
+        </div>
+        <div class="team-member">
+          <div class="avatar">
+            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=300&h=300&fit=crop&crop=face" alt="Portrait of James Whitfield">
+          </div>
+          <h4>James Whitfield</h4>
+          <div class="role">Lighting & Interiors</div>
+          <p>James is a lighting designer and regular contributor. He writes about the transformative power of layered light in residential spaces.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDITORIAL POLICY -->
+  <div class="container">
+    <section class="editorial-policy">
+      <h2>Editorial Independence</h2>
+      <p>Home Geometry is committed to publishing accurate, independent, and useful information. Our editorial team operates separately from any advertising or commercial partnerships.</p>
+      <ul>
+        <li>We do not publish sponsored articles or paid product placements.</li>
+        <li>We clearly label any affiliate links and never let them influence our recommendations.</li>
+        <li>We correct errors promptly and transparently.</li>
+        <li>We prioritize the reader's interest above all else.</li>
+      </ul>
+      <p>If you have a question about our editorial process, please <a href="contact.html" style="text-decoration: underline; color: #8b6b4d;">contact us</a>. We're always happy to hear from readers.</p>
+    </section>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo">Home<span>Geometry</span></div>
+        <p>An independent journal about interior design, architecture, and the spaces we live in. Published since 2019.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Sections</h5>
+        <ul>
+          <li><a href="index.html#interiors">Interiors</a></li>
+          <li><a href="index.html#architecture">Architecture</a></li>
+          <li><a href="index.html#materials">Materials</a></li>
+          <li><a href="index.html#lighting">Lighting</a></li>
+          <li><a href="index.html#spaces">Space Planning</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>About</h5>
+        <ul>
+          <li><a href="about.html">Our Team</a></li>
+          <li><a href="#">Editorial Policy</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms of Use</a></li>
+          <li><a href="cookies.html">Cookie Policy</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Follow</h5>
+        <ul>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Pinterest</a></li>
+          <li><a href="#">LinkedIn</a></li>
+          <li><a href="#">Newsletter</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 Home Geometry. All rights reserved.</span>
+      <span>Made with care for thoughtful living.</span>
+    </div>
+  </footer>
+
+  <!-- SCHEMA MARKUP -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    "name": "About Home Geometry",
+    "description": "Independent editorial on interior design, architecture, materials, and spatial thinking.",
+    "url": "https://www.homegeometry.com/about",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Home Geometry"
+    }
+  }
+  </script>
+
+  <script>
+    // SEARCH TOGGLE
+    const searchToggle = document.getElementById('searchToggle');
+    const searchBar = document.getElementById('searchBar');
+    const searchInput = document.getElementById('searchInput');
+
+    searchToggle.addEventListener('click', () => {
+      searchBar.classList.toggle('active');
+      if (searchBar.classList.contains('active')) {
+        searchInput.focus();
+      }
+    });
+  </script>
+
+</body>
+</html>

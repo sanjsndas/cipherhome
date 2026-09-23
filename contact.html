@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Home Geometry</title>
+  <meta name="description" content="Get in touch with the Home Geometry editorial team. Story tips, feedback, and partnership inquiries.">
+  <link rel="canonical" href="https://www.homegeometry.com/contact">
+  <meta property="og:title" content="Contact — Home Geometry">
+  <meta property="og:description" content="Get in touch with the Home Geometry editorial team.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&h=630&fit=crop">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.homegeometry.com/contact">
+  <meta name="twitter:card" content="summary_large_image">
+  <style>
+    /* ---------- RESET & BASE (same as homepage) ---------- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #fbf9f6;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      color: #2c2c2c;
+      line-height: 1.6;
+      font-size: 17px;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    h1, h2, h3, h4 {
+      font-family: 'Georgia', 'Times New Roman', serif;
+      font-weight: 500;
+      letter-spacing: -0.02em;
+      line-height: 1.25;
+      color: #1e1e1e;
+    }
+
+    h1 { font-size: 2.6rem; }
+    h2 { font-size: 2rem; margin-bottom: 1rem; }
+    h3 { font-size: 1.4rem; margin-bottom: 0.75rem; }
+
+    a {
+      text-decoration: none;
+      color: #2c2c2c;
+      transition: color 0.15s;
+    }
+
+    a:hover {
+      color: #8b6b4d;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+      height: auto;
+    }
+
+    /* ---------- TYPOGRAPHY & UTILITIES ---------- */
+    .container {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    .container-narrow {
+      max-width: 880px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    .meta {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: #7a7a7a;
+      font-weight: 500;
+    }
+
+    .category-tag {
+      display: inline-block;
+      background: #eae5df;
+      color: #4f4a44;
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 4px 10px;
+      border-radius: 20px;
+      margin-bottom: 12px;
+    }
+
+    .reading-time {
+      font-size: 0.78rem;
+      color: #888;
+      letter-spacing: 0.02em;
+    }
+
+    /* ---------- HEADER (exactly as homepage) ---------- */
+    .site-header {
+      border-bottom: 1px solid #e6e0d9;
+      background: #fbf9f6;
+      padding: 18px 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .header-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    .logo {
+      font-family: 'Georgia', serif;
+      font-size: 1.9rem;
+      font-weight: 600;
+      letter-spacing: -0.03em;
+      color: #1e1e1e;
+      line-height: 1;
+    }
+
+    .logo span {
+      color: #9c7b5c;
+      font-style: italic;
+      font-weight: 400;
+    }
+
+    .main-nav ul {
+      display: flex;
+      gap: 28px;
+      list-style: none;
+      font-size: 0.9rem;
+      font-weight: 500;
+      letter-spacing: 0.02em;
+      color: #444;
+    }
+
+    .main-nav a {
+      color: #3f3a35;
+      padding-bottom: 4px;
+      border-bottom: 2px solid transparent;
+    }
+
+    .main-nav a:hover {
+      border-bottom-color: #c4b5a5;
+      color: #1e1e1e;
+    }
+
+    .search-toggle {
+      background: none;
+      border: 1px solid #d6cec4;
+      border-radius: 30px;
+      padding: 6px 16px;
+      font-size: 0.85rem;
+      color: #555;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      transition: background 0.2s;
+    }
+
+    .search-toggle:hover {
+      background: #f0ebe5;
+    }
+
+    .search-bar {
+      display: none;
+      padding: 14px 24px;
+      background: #f3efe9;
+      border-bottom: 1px solid #e0d8cf;
+    }
+
+    .search-bar.active {
+      display: block;
+    }
+
+    .search-bar input {
+      width: 100%;
+      max-width: 600px;
+      padding: 12px 18px;
+      border: 1px solid #cdc4b8;
+      border-radius: 40px;
+      font-size: 1rem;
+      background: #fff;
+      outline: none;
+      font-family: inherit;
+    }
+
+    .search-bar input:focus {
+      border-color: #9c7b5c;
+      box-shadow: 0 0 0 3px rgba(156,123,92,0.1);
+    }
+
+    /* ---------- CONTACT PAGE SPECIFIC ---------- */
+    .contact-hero {
+      padding: 56px 0 40px;
+      border-bottom: 1px solid #e6e0d9;
+      background: #fbf9f6;
+    }
+
+    .contact-hero .container-narrow {
+      text-align: center;
+    }
+
+    .contact-hero h1 {
+      font-size: 2.8rem;
+      margin-bottom: 16px;
+      letter-spacing: -0.03em;
+    }
+
+    .contact-hero p {
+      font-size: 1.15rem;
+      color: #5f5851;
+      max-width: 620px;
+      margin: 0 auto;
+      line-height: 1.7;
+    }
+
+    .contact-content {
+      padding: 56px 0 72px;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 56px;
+      align-items: start;
+    }
+
+    .contact-form-wrap {
+      background: #ffffff;
+      border: 1px solid #ede7e0;
+      border-radius: 6px;
+      padding: 40px 36px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.02);
+    }
+
+    .contact-form-wrap h2 {
+      font-size: 1.6rem;
+      margin-bottom: 8px;
+    }
+
+    .contact-form-wrap .form-intro {
+      color: #6f6862;
+      font-size: 0.95rem;
+      margin-bottom: 28px;
+      line-height: 1.6;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-group label {
+      display: block;
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: #3f3a35;
+      letter-spacing: 0.02em;
+      margin-bottom: 6px;
+      font-family: 'Inter', sans-serif;
+    }
+
+    .form-group input,
+    .form-group textarea,
+    .form-group select {
+      width: 100%;
+      padding: 12px 16px;
+      border: 1px solid #d6cec4;
+      border-radius: 4px;
+      font-size: 0.98rem;
+      font-family: inherit;
+      background: #fbf9f6;
+      transition: border-color 0.2s, box-shadow 0.2s;
+      outline: none;
+      color: #2c2c2c;
+    }
+
+    .form-group input:focus,
+    .form-group textarea:focus,
+    .form-group select:focus {
+      border-color: #9c7b5c;
+      box-shadow: 0 0 0 3px rgba(156,123,92,0.08);
+      background: #fff;
+    }
+
+    .form-group textarea {
+      resize: vertical;
+      min-height: 140px;
+      line-height: 1.6;
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    .btn-submit {
+      background: #3f3a35;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      padding: 14px 32px;
+      font-size: 1rem;
+      font-weight: 500;
+      cursor: pointer;
+      font-family: inherit;
+      transition: background 0.2s;
+      margin-top: 8px;
+      width: 100%;
+      letter-spacing: 0.02em;
+    }
+
+    .btn-submit:hover {
+      background: #5a524a;
+    }
+
+    .form-note {
+      font-size: 0.78rem;
+      color: #8a8279;
+      margin-top: 16px;
+      line-height: 1.5;
+    }
+
+    /* Contact info sidebar */
+    .contact-info {
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+    }
+
+    .info-block {
+      border-bottom: 1px solid #e0d8cf;
+      padding-bottom: 28px;
+    }
+
+    .info-block:last-child {
+      border-bottom: none;
+    }
+
+    .info-block h4 {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.82rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #7a6b5c;
+      margin-bottom: 14px;
+      font-weight: 600;
+    }
+
+    .info-block p {
+      font-size: 0.98rem;
+      color: #3b3631;
+      line-height: 1.7;
+      margin-bottom: 4px;
+    }
+
+    .info-block a {
+      color: #3b3631;
+      border-bottom: 1px solid #d6cec4;
+      padding-bottom: 1px;
+    }
+
+    .info-block a:hover {
+      color: #8b6b4d;
+      border-bottom-color: #9c7b5c;
+    }
+
+    .social-links {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .social-links a {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 0.95rem;
+      color: #3b3631;
+      padding: 6px 0;
+      border-bottom: none;
+    }
+
+    .social-links a:hover {
+      color: #8b6b4d;
+    }
+
+    .social-links svg {
+      width: 18px;
+      height: 18px;
+      opacity: 0.7;
+    }
+
+    .contact-cta-box {
+      background: #f3efe9;
+      border-radius: 6px;
+      padding: 28px 24px;
+      margin-top: 4px;
+    }
+
+    .contact-cta-box h4 {
+      font-family: 'Georgia', serif;
+      font-size: 1.2rem;
+      text-transform: none;
+      letter-spacing: 0;
+      color: #1e1e1e;
+      margin-bottom: 8px;
+      font-weight: 500;
+    }
+
+    .contact-cta-box p {
+      font-size: 0.9rem;
+      color: #5f5851;
+      line-height: 1.6;
+      margin-bottom: 0;
+    }
+
+    /* Map placeholder / office visual */
+    .map-visual {
+      background: #eae5df;
+      border-radius: 6px;
+      overflow: hidden;
+      height: 200px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #9c8f83;
+      font-size: 0.9rem;
+      letter-spacing: 0.04em;
+      margin-top: 8px;
+    }
+
+    .map-visual img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* ---------- FOOTER (same as homepage) ---------- */
+    .site-footer {
+      background: #1e1c1a;
+      color: #b8b0a8;
+      padding: 56px 0 28px;
+      font-size: 0.9rem;
+      margin-top: 20px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 40px;
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    .footer-brand .logo {
+      color: #f0ece7;
+      font-size: 1.7rem;
+      margin-bottom: 12px;
+    }
+
+    .footer-brand p {
+      font-size: 0.9rem;
+      line-height: 1.6;
+      color: #948c84;
+      max-width: 300px;
+    }
+
+    .footer-col h5 {
+      color: #e0d8cf;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 16px;
+      font-weight: 600;
+    }
+
+    .footer-col ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .footer-col a {
+      color: #b8b0a8;
+      font-size: 0.88rem;
+    }
+
+    .footer-col a:hover {
+      color: #fff;
+    }
+
+    .footer-bottom {
+      max-width: 1280px;
+      margin: 40px auto 0;
+      padding: 24px 24px 0;
+      border-top: 1px solid #2f2c28;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 16px;
+      font-size: 0.8rem;
+      color: #7a736c;
+    }
+
+    /* ---------- RESPONSIVE ---------- */
+    @media (max-width: 1024px) {
+      .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .contact-hero h1 {
+        font-size: 2.3rem;
+      }
+    }
+
+    @media (max-width: 720px) {
+      body { font-size: 16px; }
+      h1 { font-size: 2rem; }
+      h2 { font-size: 1.6rem; }
+
+      .header-inner {
+        flex-wrap: wrap;
+        gap: 12px;
+      }
+
+      .main-nav ul {
+        gap: 16px;
+        font-size: 0.8rem;
+        flex-wrap: wrap;
+      }
+
+      .form-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+      }
+
+      .contact-form-wrap {
+        padding: 28px 20px;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .contact-hero h1 {
+        font-size: 1.9rem;
+      }
+
+      .contact-hero p {
+        font-size: 1rem;
+      }
+
+      .contact-hero {
+        padding: 40px 0 32px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .container, .container-narrow, .header-inner, .footer-grid {
+        padding: 0 16px;
+      }
+
+      .search-toggle span {
+        display: none;
+      }
+
+      .contact-form-wrap {
+        padding: 22px 16px;
+      }
+
+      .btn-submit {
+        font-size: 0.95rem;
+        padding: 13px 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="/" class="logo">Cipher Home <span>Geometry</span></a>
+      <nav class="main-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html" style="border-bottom-color:#c4b5a5; color:#1e1e1e;">Contact</a></li>
+          <li><a href="terms.html">Terms Of Privacy</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="cookies.html">Cookies Policy</a></li>
+          <li><a href="disclaimer.html">Disclaimer</a></li>
+          <li><a href="categories.html">Categories</a></li>
+        </ul>
+      </nav>
+      <button class="search-toggle" id="searchToggle" aria-label="Search articles">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+        <span>Search</span>
+      </button>
+    </div>
+    <div class="search-bar" id="searchBar">
+      <input type="search" id="searchInput" placeholder="Search articles, topics, materials…" aria-label="Search articles">
+    </div>
+  </header>
+
+  <!-- CONTACT HERO -->
+  <section class="contact-hero">
+    <div class="container-narrow">
+      <span class="category-tag">Get in Touch</span>
+      <h1>We’d love to hear from you</h1>
+      <p>Story tips, feedback, partnership inquiries, or just a note about a space you love — our inbox is open.</p>
+    </div>
+  </section>
+
+  <!-- CONTACT CONTENT -->
+  <section class="contact-content">
+    <div class="container">
+      <div class="contact-grid">
+
+        <!-- FORM -->
+        <div class="contact-form-wrap">
+          <h2>Send a message</h2>
+          <p class="form-intro">We read every email. Expect a reply within 2–3 business days.</p>
+
+          <form id="contactForm" action="#" method="post">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Full name</label>
+                <input type="text" id="name" name="name" placeholder="Jane Doe" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email address</label>
+                <input type="email" id="email" name="email" placeholder="jane@example.com" required>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <select id="subject" name="subject">
+                <option value="general">General inquiry</option>
+                <option value="story-tip">Story tip / pitch</option>
+                <option value="feedback">Feedback on an article</option>
+                <option value="partnership">Partnership / advertising</option>
+                <option value="press">Press & media</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Your message</label>
+              <textarea id="message" name="message" placeholder="Tell us what’s on your mind…" required></textarea>
+            </div>
+
+            <button type="submit" class="btn-submit">Send message</button>
+            <p class="form-note">By submitting this form you agree to our <a href="privacy.html" style="color:#7a6b5c;">Privacy Policy</a>. We’ll never share your details.</p>
+          </form>
+        </div>
+
+        <!-- SIDEBAR INFO -->
+        <div class="contact-info">
+
+          <div class="info-block">
+            <h4>Editorial</h4>
+            <p>For story ideas, pitches, and editorial questions:</p>
+            <p><a href="mailto:editorial@homegeometry.com">editorial@homegeometry.com</a></p>
+          </div>
+
+          <div class="info-block">
+            <h4>Partnerships</h4>
+            <p>Advertising, sponsored content, and collaborations:</p>
+            <p><a href="mailto:partners@homegeometry.com">partners@homegeometry.com</a></p>
+          </div>
+
+          <div class="info-block">
+            <h4>General</h4>
+            <p>Anything else — just want to say hello?</p>
+            <p><a href="mailto:hello@homegeometry.com">hello@homegeometry.com</a></p>
+          </div>
+
+          <div class="info-block">
+            <h4>Social</h4>
+            <div class="social-links">
+              <a href="#" aria-label="Instagram">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                Instagram
+              </a>
+              <a href="#" aria-label="Pinterest">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8 20.5c1-2.5 2.5-7 2.5-7"/><path d="M12 8c-2 0-3.5 1.5-3.5 3.5 0 1 .5 2 1.5 2.5"/><path d="M12 8c2 0 3.5 1.5 3.5 3.5 0 2.5-2 4.5-4.5 4.5"/></svg>
+                Pinterest
+              </a>
+              <a href="#" aria-label="LinkedIn">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                LinkedIn
+              </a>
+            </div>
+          </div>
+
+          <div class="info-block">
+            <h4>Studio</h4>
+            <p>Home Geometry Editorial<br>42 Design District<br>London, EC1V 9BX<br>United Kingdom</p>
+          </div>
+
+          <!-- Map visual placeholder -->
+          <div class="map-visual">
+            <img src="https://images.unsplash.com/photo-1524661135-423995f22d0b?w=600&h=300&fit=crop" alt="Stylized map view of London design district">
+          </div>
+
+          <div class="contact-cta-box">
+            <h4>Prefer email?</h4>
+            <p>Reach us directly at <a href="mailto:hello@homegeometry.com" style="color:#3b3631; border-bottom:1px solid #d6cec4;">hello@homegeometry.com</a> and we’ll get back to you as soon as we can.</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo">Home<span>Geometry</span></div>
+        <p>An independent journal about interior design, architecture, and the spaces we live in. Published since 2019.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Sections</h5>
+        <ul>
+          <li><a href="index.html#interiors">Interiors</a></li>
+          <li><a href="index.html#architecture">Architecture</a></li>
+          <li><a href="index.html#materials">Materials</a></li>
+          <li><a href="index.html#lighting">Lighting</a></li>
+          <li><a href="index.html#spaces">Space Planning</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>About</h5>
+        <ul>
+          <li><a href="about.html">Our Team</a></li>
+          <li><a href="#">Editorial Policy</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms of Use</a></li>
+          <li><a href="cookies.html">Cookie Policy</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Follow</h5>
+        <ul>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Pinterest</a></li>
+          <li><a href="#">LinkedIn</a></li>
+          <li><a href="#">Newsletter</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 Home Geometry. All rights reserved.</span>
+      <span>Made with care for thoughtful living.</span>
+    </div>
+  </footer>
+
+  <!-- SCHEMA MARKUP -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    "name": "Contact Home Geometry",
+    "description": "Get in touch with the Home Geometry editorial team.",
+    "url": "https://www.homegeometry.com/contact",
+    "mainEntity": {
+      "@type": "Organization",
+      "name": "Home Geometry",
+      "email": "hello@homegeometry.com",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "editorial",
+        "email": "editorial@homegeometry.com"
+      }
+    }
+  }
+  </script>
+
+  <script>
+    // SEARCH TOGGLE (same as homepage)
+    const searchToggle = document.getElementById('searchToggle');
+    const searchBar = document.getElementById('searchBar');
+    const searchInput = document.getElementById('searchInput');
+
+    searchToggle.addEventListener('click', () => {
+      searchBar.classList.toggle('active');
+      if (searchBar.classList.contains('active')) {
+        searchInput.focus();
+      }
+    });
+
+    // SEARCH FILTERING — only applies on homepage, but harmless here
+    searchInput.addEventListener('input', function() {
+      const query = this.value.toLowerCase().trim();
+      const articles = document.querySelectorAll('.article-card');
+      articles.forEach(article => {
+        const text = article.innerText.toLowerCase();
+        if (query === '' || text.includes(query)) {
+          article.classList.remove('hidden');
+        } else {
+          article.classList.add('hidden');
+        }
+      });
+    });
+
+    // CONTACT FORM — prevent default and show confirmation
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const name = document.getElementById('name').value.trim() || 'there';
+      alert(`Thank you, ${name}! Your message has been sent. We’ll be in touch soon.`);
+      this.reset();
+    });
+  </script>
+
+</body>
+</html>
